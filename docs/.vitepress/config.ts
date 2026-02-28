@@ -35,6 +35,22 @@ export default defineConfig({
                         { text: 'Configuration', link: '/getting-started/configuration' },
                     ],
                 },
+                {
+                    text: 'Guides',
+                    items: [
+                        { text: 'CLI Reference', link: '/guides/cli-reference' },
+                        { text: 'Studio Workflows', link: '/guides/studio' },
+                        { text: 'API Keys', link: '/guides/api-keys' },
+                        { text: 'Deployment', link: '/guides/deployment' },
+                        { text: 'Testing', link: '/guides/testing' },
+                    ],
+                },
+                {
+                    text: 'Security',
+                    items: [
+                        { text: 'Security Overview', link: '/security' },
+                    ],
+                },
             ],
             '/agents/': [
                 {
@@ -93,6 +109,8 @@ export default defineConfig({
                         { text: 'RAG', link: '/api/rag' },
                         { text: 'Billing', link: '/api/billing' },
                         { text: 'API Keys', link: '/api/api-keys' },
+                        { text: 'GitHub', link: '/api/github' },
+                        { text: 'Teams', link: '/api/teams' },
                     ],
                 },
             ],

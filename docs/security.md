@@ -109,10 +109,12 @@ LunaOS includes several built-in security features:
 - Secure plugin loading
 
 ### Network Security
-- CORS configuration
-- Security headers
-- HTTPS enforcement
-- Request validation
+- CORS configuration with origin whitelist
+- Security headers (HSTS, CSP, X-Content-Type-Options, X-Frame-Options, Permissions-Policy)
+- HTTPS enforcement via Cloudflare TLS 1.3
+- Request validation with Zod schemas
+- Cross-Origin-Opener-Policy: same-origin
+- Cross-Origin-Resource-Policy: same-origin
 
 ## Security Configuration
 
@@ -222,4 +224,4 @@ For security-related questions or concerns:
 
 ---
 
-**Last Updated**: January 2025
+**Last Updated**: February 2026
