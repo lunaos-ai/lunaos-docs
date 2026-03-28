@@ -5,16 +5,18 @@ export default defineConfig({
     description: 'AI-Powered Development Intelligence — 28 specialized agents for your entire SDLC',
     ignoreDeadLinks: true,
     head: [
-        ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+        ['link', { rel: 'icon', type: 'image/png', href: '/luna-icon.png' }],
+        ['link', { rel: 'apple-touch-icon', href: '/luna-icon.png' }],
         ['meta', { name: 'theme-color', content: '#6366f1' }],
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:title', content: 'LunaOS Docs' }],
         ['meta', { property: 'og:description', content: 'AI-Powered Development Intelligence — documentation for the LunaOS agent platform' }],
         ['meta', { property: 'og:url', content: 'https://docs.lunaos.ai' }],
+        ['meta', { property: 'og:image', content: 'https://docs.lunaos.ai/og-image.png' }],
     ],
 
     themeConfig: {
-        logo: '/logo.svg',
+        logo: '/luna-icon.png',
         siteTitle: 'LunaOS Docs',
 
         nav: [
