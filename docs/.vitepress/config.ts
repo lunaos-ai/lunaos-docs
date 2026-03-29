@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
     title: 'LunaOS',
     description: 'AI-Powered Development Intelligence — 28 specialized agents for your entire SDLC',
+    appearance: 'dark',
     ignoreDeadLinks: true,
     head: [
         ['link', { rel: 'icon', type: 'image/png', href: '/luna-icon.png' }],
