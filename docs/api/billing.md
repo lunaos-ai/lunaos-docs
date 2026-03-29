@@ -1,10 +1,10 @@
 # Billing API
 
-Manage subscriptions, view usage, and handle payments via Stripe.
+Manage subscriptions, view usage, and handle payments via LemonSqueezy.
 
 ## Create Checkout Session
 
-Start a Stripe Checkout flow to upgrade.
+Start a LemonSqueezy Checkout flow to upgrade.
 
 ```http
 POST /billing/checkout
@@ -28,8 +28,8 @@ Content-Type: application/json
 
 ```json
 {
-  "checkoutUrl": "https://checkout.stripe.com/c/pay_...",
-  "sessionId": "cs_live_..."
+  "checkoutUrl": "https://lunaos.lemonsqueezy.com/checkout/...",
+  "sessionId": "cs_..."
 }
 ```
 
@@ -76,7 +76,7 @@ Authorization: Bearer <token>
 
 ## Get Usage
 
-View monthly execution usage and limits.
+View current rate limit usage and subscription details.
 
 ```http
 GET /billing/usage
@@ -88,29 +88,24 @@ Authorization: Bearer <token>
 ```json
 {
   "tier": "pro",
-  "used": 247,
-  "limit": 10000,
-  "remaining": 9753,
-  "percentUsed": 2,
+  "rateLimit": {
+    "limit": 600,
+    "window": "1m",
+    "used": 12,
+    "remaining": 588
+  },
   "period": {
     "start": "2026-02-01T00:00:00.000Z",
     "end": "2026-02-28T23:59:59.000Z"
   },
-  "breakdown": {
-    "agentExecutions": 189,
-    "chainExecutions": 58
+  "features": {
+    "managedKeys": true,
+    "mcpServers": 33,
+    "rag": true,
+    "visualQA": true
   }
 }
 ```
-
-::: warning
-When `percentUsed` ≥ 80%, a `warning` field is included:
-```json
-{
-  "warning": "80% of monthly limit reached"
-}
-```
-:::
 
 ---
 
@@ -135,7 +130,7 @@ Authorization: Bearer <token>
 
 ## Customer Portal
 
-Create a Stripe Customer Portal session for managing billing.
+Create a LemonSqueezy portal session for managing billing.
 
 ```http
 POST /billing/portal
@@ -146,7 +141,7 @@ Authorization: Bearer <token>
 
 ```json
 {
-  "portalUrl": "https://billing.stripe.com/p/session/..."
+  "portalUrl": "https://app.lemonsqueezy.com/my-orders/..."
 }
 ```
 
@@ -156,10 +151,17 @@ Redirect the user to `portalUrl` to manage their subscription, update payment me
 
 ## Plan Comparison
 
-| Feature | Free | Pro ($29/mo) | Team ($79/mo) |
-|---------|------|-------------|---------------|
-| Agents | 6 | 28+ | 28+ |
-| Executions | 100/mo | 10,000/mo | 100,000/mo |
+| Feature | Free ($0) | Pro ($29/mo) | Team ($79/mo) |
+|---------|-----------|-------------|---------------|
+| Commands | Unlimited | Unlimited | Unlimited |
+| API Keys | BYOK | Managed keys | Managed keys |
+| Access | CLI + Dashboard + Studio | CLI + Dashboard + Studio | CLI + Dashboard + Studio |
+| MCP Servers | — | 33 MCP servers | 33 MCP servers |
+| RAG | — | ✅ | ✅ |
+| Visual QA | — | ✅ | ✅ |
 | Rate limit | 60/min | 600/min | 6,000/min |
-| Token tracking | ✅ | ✅ | ✅ |
-| Priority support | ❌ | ✅ | ✅ |
+| Team workspace | — | — | ✅ |
+| SSO / SAML | — | — | ✅ |
+| Shared memory | — | — | ✅ |
+| Audit logs | — | — | ✅ |
+| Support | Community | Priority | Dedicated + SLA |

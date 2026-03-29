@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "LunaOS"
   text: "AI-Powered Development Intelligence"
-  tagline: "28 specialized AI agents for your entire SDLC — code review, testing, security, deployment, and more."
+  tagline: "140+ commands across 33 MCP servers for your entire SDLC — code review, testing, security, deployment, and more."
   actions:
     - theme: brand
       text: Get Started
@@ -18,8 +18,8 @@ hero:
 
 features:
   - icon: 🤖
-    title: 28 Specialized Agents
-    details: From code review to security hardening, each agent is a domain expert trained on real-world engineering patterns.
+    title: 140+ Commands
+    details: From code review to security hardening, each command is a domain expert trained on real-world engineering patterns.
   - icon: ⛓️
     title: Agent Chains
     details: Chain agents together for multi-step workflows — analyze requirements → architect → implement → test → deploy.
@@ -76,10 +76,13 @@ LunaOS runs entirely on **Cloudflare's global edge network**:
 
 ## Pricing
 
-| | Free | Pro ($29/mo) | Team ($79/mo) |
+| | Free ($0) | Pro ($29/mo) | Team ($79/mo) |
 |---|---|---|---|
-| **Agents** | 6 core agents | All 28+ agents | All agents + priority |
-| **Executions** | 100/month | 10,000/month | 100,000/month |
+| **Commands** | Unlimited | Unlimited | Unlimited |
+| **API Keys** | BYOK | Managed keys | Managed keys |
+| **Access** | CLI + Dashboard + Studio | CLI + Dashboard + Studio | CLI + Dashboard + Studio |
+| **MCP Servers** | — | 33 MCP servers | 33 MCP servers |
+| **RAG & Visual QA** | — | ✅ | ✅ |
 | **Rate Limit** | 60 req/min | 600 req/min | 6,000 req/min |
-| **API Keys** | Up to 5 | Up to 5 | Unlimited |
-| **Support** | Community | Email | Priority |
+| **Team & SSO** | — | — | SSO/SAML, shared memory, audit logs |
+| **Support** | Community | Priority | Dedicated + SLA |

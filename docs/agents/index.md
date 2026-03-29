@@ -1,18 +1,18 @@
-# Agent Catalog
+# Command Catalog
 
-LunaOS provides **28 specialized AI agents** covering your entire software development lifecycle.
+LunaOS provides **140+ commands** across **33 MCP servers** covering your entire software development lifecycle.
 
 ## Tiers
 
-| Tier | Agents | Monthly Executions | Price |
-|------|--------|-------------------|-------|
-| 🆓 **Free** | 6 core agents | 100 | $0 |
-| ⚡ **Pro** | All 28+ agents | 10,000 | $29/mo |
-| 🏢 **Team** | All 28+ agents | 100,000 | $79/mo |
+| Tier | Commands | Rate Limit | Price |
+|------|----------|-----------|-------|
+| 🆓 **Free** | Unlimited (BYOK) | 60/min | $0 |
+| ⚡ **Pro** | Unlimited (managed keys) | 600/min | $29/mo |
+| 🏢 **Team** | Unlimited (managed keys) | 6,000/min | $79/mo |
 
-## Free Agents
+## Core Commands
 
-These agents are available on every plan:
+These commands are available on every plan:
 
 | Agent | Category | Use Case |
 |-------|----------|----------|
@@ -23,9 +23,9 @@ These agents are available on every plan:
 | [📋 Requirements](/agents/requirements-analyzer) | Planning | Analyze & structure requirements |
 | [🏗️ Design Architect](/agents/design-architect) | Planning | System design, architecture |
 
-## Pro Agents
+## Pro Commands
 
-Unlock all 28+ agents with a Pro subscription:
+Unlock managed keys, 33 MCP servers, RAG, and Visual QA with a Pro subscription:
 
 ### Solution Agents
 

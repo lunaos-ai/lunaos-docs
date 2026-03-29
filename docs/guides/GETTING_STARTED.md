@@ -512,7 +512,7 @@ Pro tier unlocks:
 ### Get Your API Key
 
 1. Visit [agent.lunaos.ai/pricing](https://agent.lunaos.ai/pricing)
-2. Subscribe to Pro or Enterprise
+2. Subscribe to Pro or Team
 3. Copy your API key
 4. Configure in your MCP client:
 
@@ -662,10 +662,10 @@ Built something cool with Luna? Share it!
 - 💬 [Discord Community](https://discord.gg/lunaagents)
 - ❓ [FAQ](https://agent.lunaos.ai/faq)
 
-**Pro/Enterprise Support**:
+**Pro/Team Support**:
 - 📧 Email: support@lunaos.ai
 - 🎯 Priority response: <24 hours
-- 💬 Dedicated Slack channel (Enterprise)
+- 💬 Dedicated support + SLA (Team)
 
 ---
 

@@ -1,6 +1,6 @@
 # Getting Started
 
-Welcome to **LunaOS** — your AI-powered development team. LunaOS provides 28 specialized AI agents that cover your entire software development lifecycle.
+Welcome to **LunaOS** — your AI-powered development team. LunaOS provides 140+ commands across 33 MCP servers that cover your entire software development lifecycle.
 
 ## What is LunaOS?
 
@@ -41,12 +41,14 @@ curl -X POST https://api.lunaos.ai/agents/execute \
 
 Visit [agents.lunaos.ai](https://agents.lunaos.ai) for a visual interface with real-time streaming.
 
-## Free Tier Agents
+## Free Tier
 
-These 6 agents are available on the free plan (100 executions/month):
+The free plan includes unlimited commands with BYOK (bring your own key), CLI + Dashboard + Studio access, and community support. Rate limit: 60 requests/min.
 
-| Agent | Purpose |
-|-------|---------|
+Popular commands available on the free plan:
+
+| Command | Purpose |
+|---------|---------|
 | 🔍 [Code Review](/agents/code-review) | Find bugs, security issues, and code smells |
 | 🧪 [Testing](/agents/testing-validation) | Generate unit tests, integration tests, E2E tests |
 | 📝 [Documentation](/agents/documentation) | Write JSDoc, README, API docs, guides |
@@ -57,5 +59,5 @@ These 6 agents are available on the free plan (100 executions/month):
 ## Next Steps
 
 - **[Quickstart →](/getting-started/quickstart)** — Get running in 2 minutes
-- **[Agent Catalog →](/agents/)** — Browse all 28 agents
+- **[Command Catalog →](/agents/)** — Browse all 140+ commands
 - **[API Reference →](/api/)** — Full REST API documentation

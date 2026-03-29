@@ -137,6 +137,6 @@ curl -N -X POST https://api.lunaos.ai/agents/execute \
 
 ## What's Next?
 
-- **[Agent Catalog →](/agents/)** — Browse all 28 agents with examples
+- **[Command Catalog →](/agents/)** — Browse all 140+ commands with examples
 - **[API Reference →](/api/)** — Full REST API documentation
 - **[Configuration →](/getting-started/configuration)** — Customize your setup

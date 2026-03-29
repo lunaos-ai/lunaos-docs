@@ -118,19 +118,23 @@ luna_AbCdEfGh1234567890IjKlMnOpQrSt
 
 ## 📊 Usage Tracking
 
-### Free Tier Limits
-- Queries: 100/day
-- Files indexed: 1,000 total
-- Luna Vision RAG™: ❌ Not available
+### Free Tier ($0)
+- Commands: Unlimited (BYOK)
+- Rate limit: 60 requests/min
+- RAG: ❌ Not available
+- Visual QA: ❌ Not available
 
-### Pro Tier Limits
-- Queries: Unlimited
-- Files indexed: Unlimited
-- Luna Vision RAG™: ✅ Full access
+### Pro Tier ($29/mo)
+- Commands: Unlimited (managed keys)
+- Rate limit: 600 requests/min
+- 33 MCP servers
+- RAG: ✅ Full access
+- Visual QA: ✅ Full access
 
-### Enterprise Tier
-- Everything unlimited
-- Custom limits available
+### Team Tier ($79/mo)
+- Everything in Pro
+- Rate limit: 6,000 requests/min
+- Team workspace, SSO/SAML, shared memory, audit logs
 
 ---
 

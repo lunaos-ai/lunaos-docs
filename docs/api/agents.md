@@ -30,10 +30,10 @@ GET /agents/list
       "tier": "pro"
     }
   ],
-  "total": 28,
+  "total": 140,
   "tiers": {
-    "free": 6,
-    "pro": 22
+    "free": 140,
+    "pro": 140
   }
 }
 ```
@@ -85,10 +85,10 @@ data: {"type":"done","tokens":{"input":245,"output":602},"cost":"$0.0003","durat
 Every execution response includes usage headers:
 
 ```http
-X-Usage-Used: 47
-X-Usage-Limit: 100
-X-Usage-Remaining: 53
-X-Usage-Warning: 80% of monthly limit reached    # Only when ≥80%
+X-RateLimit-Used: 12
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 48
+X-RateLimit-Reset: 1711843260
 ```
 
 ---
@@ -107,7 +107,7 @@ When a **free** user attempts to execute a **Pro** agent:
   "agentName": "Authentication & Authorization Agent",
   "upgradeUrl": "https://agents.lunaos.ai/pricing",
   "checkoutUrl": "https://api.lunaos.ai/billing/checkout",
-  "message": "🔒 Authentication & Authorization Agent is a Pro agent. Upgrade to Pro for unlimited access to all 28 agents."
+  "message": "🔒 Authentication & Authorization Agent is a Pro feature. Upgrade to Pro for managed keys, 33 MCP servers, RAG, and Visual QA."
 }
 ```
 
