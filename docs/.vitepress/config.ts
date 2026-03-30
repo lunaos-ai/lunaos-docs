@@ -46,6 +46,7 @@ export default defineConfig({
                         { text: 'API Keys', link: '/guides/api-keys' },
                         { text: 'Deployment', link: '/guides/deployment' },
                         { text: 'Testing', link: '/guides/testing' },
+                        { text: 'IntelliJ Plugin', link: '/guides/intellij-plugin' },
                     ],
                 },
                 {
