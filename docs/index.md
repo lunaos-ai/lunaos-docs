@@ -3,76 +3,67 @@ layout: home
 
 hero:
   name: "LunaOS"
-  text: "AI-Powered Development Intelligence"
-  tagline: "140+ commands across 33 MCP servers for your entire SDLC — code review, testing, security, deployment, and more."
+  text: "The AI Language for Everything"
+  tagline: "55 agents. 143 skills. 10 products. Code, deploy, design, test — all from your terminal."
   actions:
     - theme: brand
       text: Get Started
       link: /getting-started/
     - theme: alt
+      text: Agent Catalog
+      link: /agents/
+    - theme: alt
       text: API Reference
       link: /api/
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/lunaos-ai
 
 features:
-  - icon: 🤖
-    title: 140+ Commands
-    details: From code review to security hardening, each command is a domain expert trained on real-world engineering patterns.
-  - icon: ⛓️
-    title: Agent Chains
-    details: Chain agents together for multi-step workflows — analyze requirements → architect → implement → test → deploy.
-  - icon: 🔍
-    title: RAG-Enhanced Context
-    details: Point agents at your codebase for deep contextual understanding. Vectorize + AI search for relevant code.
-  - icon: ⚡
-    title: Multi-Provider LLMs
+  - title: 55 AI Agents
+    details: From code review to security hardening — each agent is a domain expert trained on real-world engineering patterns.
+  - title: Luna Pipe Language
+    details: Compose agents into pipelines with >>, ~~, try/catch, loops, and variables. One line does what scripts take hundreds.
+  - title: RAG-Enhanced Context
+    details: Point agents at your codebase for deep understanding. Vectorize + AI search finds relevant code automatically.
+  - title: Multi-Provider LLMs
     details: Choose your preferred LLM — DeepSeek, Claude, GPT-4o — with automatic fallback and cost optimization.
-  - icon: 🔑
-    title: API Keys & Rate Limiting
-    details: Generate API keys for CI/CD integration. Tier-based rate limiting with transparent usage headers.
-  - icon: 🛡️
-    title: Enterprise Security
-    details: A+ security headers, HSTS, strict CSP, audit logging, and per-request performance tracking.
+  - title: Editor Integration
+    details: VS Code extension and IntelliJ plugin — run agents, write Luna pipes, and view logs without leaving your editor.
+  - title: Edge-First Architecture
+    details: Runs entirely on Cloudflare's global edge. Sub-20ms cold starts across 300+ locations. D1, KV, Vectorize, Workers AI.
 ---
 
 ## Quick Start
 
 ```bash
 # Install the CLI
-npm install -g @luna-agents/cli
-
-# Login
-luna login
+npm install -g luna-agents
 
 # Run your first agent
 luna run code-review --context "Review this PR for security issues"
+
+# Or use Luna pipes
+luna pipe "req >> des >> plan >> go *5 >> (rev ~~ test ~~ sec) ?>> ship"
 ```
 
 Or use the **REST API** directly:
 
 ```bash
 curl -X POST https://api.lunaos.ai/agents/execute \
-  -H "Authorization: Bearer YOUR_TOKEN" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{
-    "agent": "code-review",
-    "context": "function login(user, pass) { return db.query(`SELECT * FROM users WHERE email='${user}'`) }"
-  }'
+  -d '{"agent": "code-review", "context": "Review this function for SQL injection"}'
 ```
 
-## Architecture
+## Products
 
-LunaOS runs entirely on **Cloudflare's global edge network**:
-
-| Service | Technology | Purpose |
-|---------|-----------|---------|
-| **API** | Cloudflare Workers + Hono | Sub-20ms cold start, 300+ edge locations |
-| **Database** | D1 (SQLite) | 11 tables — users, executions, subscriptions, API keys, audit log |
-| **Cache** | KV | Rate limiting, session management, metrics |
-| **Search** | Vectorize | RAG pipeline for codebase understanding |
-| **AI** | Workers AI + External LLMs | DeepSeek, Claude, GPT-4o |
+| Product | URL | Purpose |
+|---------|-----|---------|
+| **CLI** | `npm i -g luna-agents` | Terminal agent orchestration |
+| **Dashboard** | [agents.lunaos.ai](https://agents.lunaos.ai) | Web management console |
+| **Studio** | [studio.lunaos.ai](https://studio.lunaos.ai) | Visual workflow builder |
+| **Mobile** | App Store / Play Store | Monitor and trigger on the go |
+| **VS Code** | Marketplace | Editor integration |
+| **IntelliJ** | Marketplace | JetBrains IDE integration |
+| **API** | [api.lunaos.ai](https://api.lunaos.ai) | REST API for everything |
 
 ## Pricing
 
@@ -80,9 +71,8 @@ LunaOS runs entirely on **Cloudflare's global edge network**:
 |---|---|---|---|
 | **Commands** | Unlimited | Unlimited | Unlimited |
 | **API Keys** | BYOK | Managed keys | Managed keys |
-| **Access** | CLI + Dashboard + Studio | CLI + Dashboard + Studio | CLI + Dashboard + Studio |
-| **MCP Servers** | — | 33 MCP servers | 33 MCP servers |
-| **RAG & Visual QA** | — | ✅ | ✅ |
+| **MCP Servers** | — | 33 pre-configured | 33 pre-configured |
+| **RAG + Visual QA** | — | Included | Included |
 | **Rate Limit** | 60 req/min | 600 req/min | 6,000 req/min |
-| **Team & SSO** | — | — | SSO/SAML, shared memory, audit logs |
+| **Team + SSO** | — | — | SSO/SAML, audit logs |
 | **Support** | Community | Priority | Dedicated + SLA |
