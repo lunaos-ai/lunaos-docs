@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
     title: 'LunaOS',
-    description: '55 AI agents, 143 skills, 10 products — documentation for the LunaOS platform',
-    appearance: 'dark',
+    description: 'AI-Native Backend Platform — 28 agents, API reference, guides, and examples',
+    appearance: 'force-dark',
     ignoreDeadLinks: true,
     head: [
         ['link', { rel: 'icon', type: 'image/png', href: '/luna-icon.png' }],
@@ -11,7 +11,7 @@ export default defineConfig({
         ['meta', { name: 'theme-color', content: '#8b5cf6' }],
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:title', content: 'LunaOS Docs — AI Agent Platform' }],
-        ['meta', { property: 'og:description', content: '55 AI agents, 143 skills, 10 products. Code, deploy, design, test — all from your terminal.' }],
+        ['meta', { property: 'og:description', content: '28 AI agents for the full dev lifecycle. Build, deploy, test — all from your terminal.' }],
         ['meta', { property: 'og:url', content: 'https://docs.lunaos.ai' }],
         ['meta', { property: 'og:image', content: 'https://lunaos.ai/assets/og-image.png' }],
     ],
@@ -134,7 +134,7 @@ export default defineConfig({
         ],
 
         footer: {
-            message: '55 agents. 143 skills. 10 products. Infinite pipelines.',
+            message: 'Built with \u2764\ufe0f for developers',
             copyright: '© 2026 LunaOS — <a href="https://lunaos.ai/privacy.html">Privacy</a> · <a href="https://lunaos.ai/terms.html">Terms</a> · <a href="https://lunaos.ai/contact.html">Contact</a>',
         },
 
