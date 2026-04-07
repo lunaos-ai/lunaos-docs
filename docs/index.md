@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: "LunaOS"
-  text: "The AI Language for Everything"
-  tagline: "55 agents. 143 skills. 10 products. Code, deploy, design, test — all from your terminal."
+  text: "AI-Powered Development Intelligence"
+  tagline: "28 specialized AI agents for your entire SDLC — code review, testing, security, deployment, and more."
   actions:
     - theme: brand
       text: Get Started
@@ -17,7 +17,7 @@ hero:
       link: /api/
 
 features:
-  - title: 55 AI Agents
+  - title: 28 AI Agents
     details: From code review to security hardening — each agent is a domain expert trained on real-world engineering patterns.
   - title: Luna Pipe Language
     details: Compose agents into pipelines with >>, ~~, try/catch, loops, and variables. One line does what scripts take hundreds.
