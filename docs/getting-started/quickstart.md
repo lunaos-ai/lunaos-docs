@@ -10,14 +10,14 @@ Get LunaOS running in under 2 minutes.
 ## Step 1: Install the CLI
 
 ```bash
-npm install -g @luna-agents/cli
+npm install -g luna-agents
 ```
 
 Verify the installation:
 
 ```bash
 luna --version
-# @luna-agents/cli v0.2.0
+# luna-agents v0.2.0
 ```
 
 ## Step 2: Authenticate

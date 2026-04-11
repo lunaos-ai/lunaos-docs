@@ -23,7 +23,7 @@ You → Agent → LLM → Structured Output
 ### 1. CLI (Recommended)
 
 ```bash
-npm install -g @luna-agents/cli
+npm install -g luna-agents
 luna login
 luna run code-review --context "your code here"
 ```

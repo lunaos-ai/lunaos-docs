@@ -1,11 +1,11 @@
 # CLI Reference
 
-Complete reference for the `@luna-agents/cli` command-line tool.
+Complete reference for the `luna-agents` command-line tool.
 
 ## Installation
 
 ```bash
-npm install -g @luna-agents/cli
+npm install -g luna-agents
 ```
 
 ## Commands
