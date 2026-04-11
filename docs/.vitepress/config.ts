@@ -25,6 +25,7 @@ export default defineConfig({
             { text: 'Agents', link: '/agents/' },
             { text: 'API Reference', link: '/api/' },
             { text: 'Studio', link: 'https://studio.lunaos.ai' },
+            { text: "What's New", link: '/whats-new' },
             { text: 'Pricing', link: 'https://lunaos.ai/pricing.html' },
             { text: 'Dashboard', link: 'https://agents.lunaos.ai/dashboard' },
         ],
